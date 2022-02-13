@@ -1,0 +1,140 @@
+body {
+    font-family: 'Nunito', sans-serif;
+}
+div ul li  {
+    list-style-type: none;
+
+}
+div ul li a {
+    text-decoration: none;
+    color: #eed6d6;
+}
+header {
+    display: grid;
+    grid-template-columns: 0.14fr 0.14fr 0.14fr 1/7fr 0.14fr 0.14fr 0.14fr;
+    grid-template-rows: 1fr;
+}
+.Div__Menu{
+    background-color: #05011d;
+    padding: 50px;
+    margin: 0px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    align-items:center; 
+    height: 100%;
+}
+nav {
+    background-image: url(../i/fondo-negro-de-la-textura-del-grunge-abstracta-en-dist-84713541.jpg);
+    padding: 0px;
+    margin: auto;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 0.25fr  0.25fr  0.25fr  0.25fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: ". . Imagen Imagen";
+    justify-content: end;
+    align-items: center;
+    overflow: hidden;
+} 
+nav img {
+    grid-area: Imagen;
+   
+}
+footer a {
+    display: inline;
+    background-color: #05011d;
+    color: #eed6d6;
+}
+
+body{
+    background-color: #010b35;
+    background-size: cover;
+}
+
+footer div {
+    grid-area: Links;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+footer {
+  
+    background-color: black;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    height: 10rem;
+    display: inline-grid;
+    display: grid;
+    grid-template-columns: 0.33fr 0.33fr 0.33fr;
+    grid-template-rows: 100%;
+    grid-template-areas: " . Links .";
+    justify-content: center;
+    align-items: center;
+}
+.Div__Menu--Bebida{
+    position: relative;
+}
+.Div__Menu--Desplegable {
+    display: none;
+    position: absolute;
+    background: #05011d;
+}
+.Div__Menu--Bebidas:hover .Div__Menu--Desplegable {
+display: block;
+
+}
+@media screen and (max-width:425px) {
+    .div {
+        width: 100px;
+    }
+    .Div__Menu {
+        flex-direction: column;
+        align-items: flex-start;
+       
+    }
+    header {
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.14fr 0.14fr 0.14fr 1/7fr 0.14fr 0.14fr 0.14fr;
+
+    }
+    nav {
+        grid-template-columns:1fr;
+        grid-template-rows:0.25fr  0.25fr  0.25fr  0.25fr;
+        grid-template-areas: "imagen"
+                             "imagen"
+                             "imagen"
+                             "imagen";
+        justify-content: start;
+        align-items:flex-start;
+        
+    } 
+}
+@media screen and (max-width:768px) {
+    
+    .Div__Menu {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    header {
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.14fr 0.14fr 0.14fr 1/7fr 0.14fr 0.14fr 0.14fr;
+    }
+    nav {
+        grid-template-columns:1fr;
+        grid-template-rows:0.25fr  0.25fr  0.25fr  0.25fr;
+        grid-template-areas: "imagen"
+                             "imagen"
+                             "imagen"
+                             "imagen";
+        justify-content: start;
+        align-items:flex-start;
+        overflow: hidden;
+    } 
+}
+
+}
+ 
