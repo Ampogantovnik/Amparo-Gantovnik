@@ -60,6 +60,28 @@ footer div {
     justify-content: center;
     align-items: center;
 }
+footer section{
+    grid-area: Whatsapp;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+footer section img{
+    animation-name: LogoWpp;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    width: 35px;
+    height: 35px;
+
+}
+@keyframes LogoWpp {
+    0%{ width: 35px;
+        height: 35px;}
+    50%{ width: 50px;
+        height: 50px;}
+    100%{ width: 35px;
+        height: 35px;}
+}
 footer {
   
     background-color: black;
@@ -71,7 +93,7 @@ footer {
     display: grid;
     grid-template-columns: 0.33fr 0.33fr 0.33fr;
     grid-template-rows: 100%;
-    grid-template-areas: " . Links .";
+    grid-template-areas: " . Links Whatsapp";
     justify-content: center;
     align-items: center;
 }
@@ -137,6 +159,6 @@ display: block;
 }
 footer div img {
     width: 25px;
-    height: 25px;
+    height:25px;
 }
  
